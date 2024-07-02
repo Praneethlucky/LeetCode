@@ -6,12 +6,14 @@ public class Solution {
             if(a%2 == 0)
             {
                 count =0;
+                
             }
             else{
                 count += 1;
+                if(count == 3)
+                    return true;
             }
-            if(count == 3)
-                return true;
+            
         }
         return false;
     }
