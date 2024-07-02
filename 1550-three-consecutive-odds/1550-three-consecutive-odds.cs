@@ -3,16 +3,9 @@ public class Solution {
         int count = 0;
         foreach(var a in arr)
         {
-            if(a%2 == 0)
-            {
-                count =0;
-                
-            }
-            else{
-                count += 1;
-                if(count == 3)
-                    return true;
-            }
+            count = a%2==0?0:count+1;
+            if(count == 3)
+                return true;
             
         }
         return false;
